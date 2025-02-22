@@ -1,4 +1,4 @@
 selene>=2.0.0rc7
 pytest~=8.3.4
-openpyxl~=3.2.0b1
-PyPDF2~=3.0.1
+openpyxl==3.0.9
+pypdf~=5.3.0

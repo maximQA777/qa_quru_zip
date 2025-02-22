@@ -20,7 +20,6 @@ def test_csv_file():
             pprint(rows)
 
 
-
 # Читаем xlsx-файл расположенный в архиве и выполняем проверки содержимого.
 def test_xlsx():
     with ZipFile("resources/archive.zip", 'r') as zfile_xlsx:
@@ -32,10 +31,9 @@ def test_xlsx():
             assert sheet['B1'].value == "Январь"
             assert sheet['A12'].value == "=A11+1"
 
-
-            #в таблице открыть
-            for row in sheet.iter_rows(values_only=True):
-                print(" | ".join(str(cell) if cell is not None else "" for cell in row))
+            # в таблице открыть
+            #for row in sheet.iter_rows(values_only=True):
+                #print(" | ".join(str(cell) if cell is not None else "" for cell in row))
 
 
 def test_pdf():
